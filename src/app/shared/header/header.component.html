@@ -12,16 +12,12 @@
       </svg>
     </label>
     <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a href="index.html">Nata Acosta<sup>portfolio</sup></a></h1>
+        <h1 class="rk-logo"><a routerLink="">{{ infoPaginaService.info.titulo }}<sup>{{ infoPaginaService.info.sobre_titulo  }}</sup></a></h1>
         <nav class="rk-navigation">
             <ul class="rk-menu">
-                <li class="rk-menu__item"><a href="index.html" class="rk-menu__link">Home</a>
+                <li routerlinkActive="active" class="rk-menu__item"><a routerLink="inicio" class="rk-menu__link">Inicio</a>
                 </li>
-                <li class="active rk-menu__item"><a href="portfolio.html" class="rk-menu__link">Portfolio</a>
-                </li>
-                <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Blog</a>
-                </li>
-                <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contact Us</a>
+                <li routerlinkActive="active" class="rk-menu__item"><a routerLink="proyectos" class="rk-menu__link">Proyectos</a>
                 </li>
             </ul>
             <form class="rk-search">
