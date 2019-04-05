@@ -11,6 +11,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { ItemComponent } from './pages/item/item.component';
+import { BusquedaComponent } from './pages/busqueda/busqueda.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
     HeaderComponent,
     FooterComponent,
     PortafolioComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    ItemComponent,
+    BusquedaComponent
   ],
   imports: [
     BrowserModule,

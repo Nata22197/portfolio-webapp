@@ -1,0 +1,9 @@
+<div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+    <a *ngFor="let proyecto of proyectoService.proyectos_busqueda" [routerLink]="['/proyectos_items', proyecto.codigo]" class="rk-item ae-masonry__item">
+        <img src="assets/proyectos/{{ proyecto.url }}.png" alt="">
+        <div [routerLink]="['/proyectos_items', proyecto.codigo]" class="item-meta">
+            <h2>{{ proyecto.titulo }}</h2>
+            <p>{{ proyecto.categoria }}</p>
+        </div>
+    </a>
+</div>
