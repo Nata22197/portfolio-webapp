@@ -23,7 +23,7 @@ import { BusquedaComponent } from './pages/busqueda/busqueda.component';
     PortafolioComponent,
     ProyectosComponent,
     ItemComponent,
-    BusquedaComponent
+    BusquedaComponent,
   ],
   imports: [
     BrowserModule,
