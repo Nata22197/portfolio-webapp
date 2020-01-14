@@ -1,6 +1,6 @@
-export interface Proyecto {
-    codigo: string;
-    url: string;
-    titulo: string;
-    categoria: string;
+export interface Producto {
+  categoria: string;
+  cod: string;
+  titulo: string;
+  url: string;
   }

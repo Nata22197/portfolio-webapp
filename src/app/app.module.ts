@@ -10,9 +10,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
-import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ItemComponent } from './pages/item/item.component';
 import { BusquedaComponent } from './pages/busqueda/busqueda.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -21,9 +21,9 @@ import { BusquedaComponent } from './pages/busqueda/busqueda.component';
     HeaderComponent,
     FooterComponent,
     PortafolioComponent,
-    ProyectosComponent,
     ItemComponent,
     BusquedaComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

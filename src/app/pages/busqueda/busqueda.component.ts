@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProyectosService } from 'src/app/services/proyectos.service';
+import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
   selector: 'app-busqueda',
@@ -10,14 +10,15 @@ import { ProyectosService } from 'src/app/services/proyectos.service';
 export class BusquedaComponent implements OnInit {
 
   constructor( private route: ActivatedRoute,
-               public proyectoService: ProyectosService ) { }
+               public productosService: ProductosService ) { }
 
   ngOnInit() {
     this.route.params
-        .subscribe( parametros => {
-          
-          this.proyectoService.buscarProyecto( parametros['cadena'] );
-    });
+      .subscribe( params => {
+
+        this.productosService.buscarProducto( params['termino'] );
+
+      });
   }
 
 }

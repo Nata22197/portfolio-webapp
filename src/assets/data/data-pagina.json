@@ -1,7 +1,11 @@
 {
-    "titulo": "Nata Acosta",
-    "sobre_titulo": "portfolio",
+    "titulo": "Nata Acosta's",
     "email": "anatanael437@gmail.com",
     "nombre_corto": "Natanael",
-    "copyright": "Nata Portfolio"
+    "pagina_autor": "https://nataGitlab.com",
+    "facebook": "https://facebook.com",
+    "twitter": "https://twitter.com/",
+    "instagram": "https://instagram.com",
+    "tublr": "https://www.tumblr.com/",
+    "equipo_trabajo": []
 }

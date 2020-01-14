@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProyectosService } from 'src/app/services/proyectos.service';
-import { ProyectoDescripcion } from "../../interfaces/proyecto-descripcion.interface";
+import { ProductosService } from 'src/app/services/productos.service';
+import { ProductoDescripcion } from "../../interfaces/producto-descripcion.interface";
 
 @Component({
   selector: 'app-item',
@@ -10,26 +10,21 @@ import { ProyectoDescripcion } from "../../interfaces/proyecto-descripcion.inter
 })
 export class ItemComponent implements OnInit {
   
-  proyecto: ProyectoDescripcion;
-  proyecto_id: string;
-  cargado:boolean = true;
+  producto: ProductoDescripcion;
+  id: string;
   constructor( private route: ActivatedRoute,
-               public proyectoService: ProyectosService  ) { }
+               public productosService: ProductosService  ) { }
 
   ngOnInit() {
     
     this.route.params
           .subscribe( parametros => {
-            this.proyectoService.getProyecto(parametros['id'])
-                  .subscribe( (proyecto:ProyectoDescripcion) => {
+            this.productosService.getProducto(parametros['id'])
+                  .subscribe( (producto:ProductoDescripcion) => {
                     
-                    this.proyecto_id = parametros['id'];
-                    this.proyecto = proyecto;
-                    setTimeout(() => {
-                      
-                      this.cargado = false;
+                    this.id = parametros['id'];
+                    this.producto = producto;
 
-                    }, 300);
                   });
           });
   }
